@@ -49,7 +49,7 @@ function loadTask() {
     tasks.forEach (element => {
         let item = document.createElement("li")
         item.innerHTML = `
-        <span onclick= "toggleTask(this)"> ${taskText} </span>
+        <span onclick= "toggleTask(this)"> ${element.task} </span>
         <button class= "delete-btn" onclick= "deleteTask(this)">✖</button>
         `
         if (element.status) {
